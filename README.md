@@ -1,6 +1,7 @@
 # zsh-config
 My .zshrc config for backup *macOS*
 
+
 0. install homebrew and iterm2
 
 `xcode-select —-install`
@@ -9,11 +10,13 @@ My .zshrc config for backup *macOS*
 
 `brew cask install iterm2`
 
+
 1. install zsh
 
 `brew install zsh zsh-completions`
 
 `sudo port install zsh zsh-completions`
+
 
 2. install oh-my-zsh
 
@@ -21,11 +24,13 @@ My .zshrc config for backup *macOS*
 
 `upgrade_oh_my_zsh`
 
+
 3. install powerlevel10k zsh theme
 
 `git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k`
 
 (Set ZSH_THEME=powerlevel10k/powerlevel10k in your ~/.zshrc.)
+
 
 4. install bright lights iterm2 theme
 
@@ -35,6 +40,7 @@ My .zshrc config for backup *macOS*
 
 (Set theme to above)
 
+
 5. install zsh autosuggestions
 
 `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions`
@@ -43,11 +49,13 @@ My .zshrc config for backup *macOS*
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+
 6. install zsh syntax highlighting
 
 `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git`
 
 `echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc`
+
 
 7. install source code powerline regular font
 
