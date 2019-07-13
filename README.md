@@ -5,6 +5,10 @@ install zsh
 
 install oh-my-zsh
 
+install zsh autosuggestions
+
+install zsh syntax highlighting
+
 install source code powerline regular
 
 install powerlevel10k zsh theme
