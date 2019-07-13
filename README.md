@@ -29,7 +29,9 @@ My .zshrc config for backup *macOS*
 
 `git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k`
 
-(Set ZSH_THEME=powerlevel10k/powerlevel10k in your ~/.zshrc.)
+(Set in your ~/.zshrc.)
+
+> ZSH_THEME=powerlevel10k/powerlevel10k 
 
 
 4. install bright lights iterm2 theme
@@ -47,7 +49,7 @@ My .zshrc config for backup *macOS*
 
 (Add the following to your .zshrc:)
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+> source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
 6. install zsh syntax highlighting
