@@ -47,9 +47,7 @@ My .zshrc config for backup *macOS*
 
 `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions`
 
-(Add the following to your .zshrc:)
-
-> source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+`echo "source ${(q-)PWD}/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc`
 
 
 6. install zsh syntax highlighting
@@ -66,3 +64,9 @@ My .zshrc config for backup *macOS*
 `cd fonts`
 
 `./install.sh`
+
+
+8. optional: add the following lines to your vscode config
+
+`"terminal.integrated.shell.osx": "/bin/zsh",`
+`"terminal.integrated.fontFamily": "'SourceCodePro+Powerline+Awesome Regular'",`
