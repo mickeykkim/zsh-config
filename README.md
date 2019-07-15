@@ -1,8 +1,9 @@
 # zsh-config
 My .zshrc config for backup *macOS*
 
+From-scratch installation guide:
 
-0. install homebrew and iterm2
+0. install homebrew and iterm2 (optionally install vscode as well if desired)
 
 `xcode-select —-install`
 
@@ -34,9 +35,11 @@ My .zshrc config for backup *macOS*
 
 4. install zsh autosuggestions
 
-`git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions`
+`git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 
-`echo "source ${(q-)PWD}/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc`
+(Run the following or manually edit into .zshrc if other plugins already installed (i.e. git)):
+
+`echo "plugins=(zsh-autosuggestions)" >> ${ZDOTDIR:-$HOME}/.zshrc`
 
 
 5. install zsh syntax highlighting
