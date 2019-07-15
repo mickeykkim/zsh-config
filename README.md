@@ -29,35 +29,24 @@ My .zshrc config for backup *macOS*
 
 `git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k`
 
-(Set in your ~/.zshrc.)
-
-> ZSH_THEME=powerlevel10k/powerlevel10k 
+`echo "ZSH_THEME=powerlevel10k/powerlevel10k" >> ${ZDOTDIR:-$HOME}/.zshrc`
 
 
-4. install bright lights iterm2 theme
-
-`https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Bright%20Lights.itermcolors`
-
-(Set iterm2 shell to /bash/zsh)
-
-(Set theme to above)
-
-
-5. install zsh autosuggestions
+4. install zsh autosuggestions
 
 `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions`
 
 `echo "source ${(q-)PWD}/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc`
 
 
-6. install zsh syntax highlighting
+5. install zsh syntax highlighting
 
 `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git`
 
 `echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc`
 
 
-7. install source code powerline regular font
+6. install source code powerline regular font
 
 `git clone https://github.com/powerline/fonts.git`
 
@@ -66,8 +55,22 @@ My .zshrc config for backup *macOS*
 `./install.sh`
 
 
-8. optional: add the following lines to your vscode config
+7. if using vscode: add the following lines to your vscode config
 
 > "terminal.integrated.shell.osx": "/bin/zsh",
 
 > "terminal.integrated.fontFamily": "'SourceCodePro+Powerline+Awesome Regular'",
+
+
+8. optional: install bright lights iterm2 theme
+
+> https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Bright%20Lights.itermcolors
+
+(Set iterm2 shell to /bash/zsh)
+
+(Set theme to above)
+
+
+9. optional: install plastic vscode theme
+
+> https://vscodethemes.com/e/will-stone.plastic
