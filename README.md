@@ -68,5 +68,5 @@ My .zshrc config for backup *macOS*
 
 8. optional: add the following lines to your vscode config
 
-`"terminal.integrated.shell.osx": "/bin/zsh",`
-`"terminal.integrated.fontFamily": "'SourceCodePro+Powerline+Awesome Regular'",`
+> "terminal.integrated.shell.osx": "/bin/zsh",
+> "terminal.integrated.fontFamily": "'SourceCodePro+Powerline+Awesome Regular'",
